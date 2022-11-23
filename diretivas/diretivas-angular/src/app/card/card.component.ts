@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-
-  constructor() { }
+  produtos: string[] = []
+  menuType: string = "superuser"
+  constructor() { 
+    this.produtos = [
+      "mouse",
+      "teclado",
+      "monitor",
+      "cabo de rede"
+    ]
+   }
 
   ngOnInit(): void {
   }
+  adicionar() {
+    this.produtos.push("Produto-teste")
+  }
 
+  remover(index: number) {
+    this.produtos.splice(index, 1)
+  }
 }
