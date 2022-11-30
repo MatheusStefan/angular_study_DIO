@@ -12,6 +12,10 @@ const routes: Routes = [
   {
     path: 'portfolio',
     component: CardComponent
+  },
+  {
+    path: '**',
+    redirectTo: ''  //rota coringa, para paths que nao existem e o sistema nao quebrar
   }
 ];
 
