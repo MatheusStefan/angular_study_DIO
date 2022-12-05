@@ -14,6 +14,9 @@ export class CardComponent implements OnInit {
     this.activeRoute.params.subscribe(
       res => console.log(res)
     )
+    this.activeRoute.firstChild?.params.subscribe(
+      res => console.log(res)
+    )
     this.activeRoute.queryParams.subscribe(
       res => console.log(res)
     )
