@@ -10,9 +10,13 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'portfolio/:id',
-    component: CardComponent
-  },
+    path: 'portfolio',
+    component: CardComponent, children:[
+      {
+        path: ':id',
+        component: CardComponent
+      },
+  ]},
   {
     path: '**',
     redirectTo: ''  //rota coringa, para paths que nao existem e o sistema nao quebrar
