@@ -9,6 +9,7 @@
   border-radius: 5px;
 }
 
+
 .card__title > h3 {
   display: flex;
   justify-content: center;
@@ -22,6 +23,11 @@
   margin-right: auto;
 }
 
+.card__body > img {
+  height: 245px;
+  width: 225px;
+}
+
 .card__stats {
   display: flex;
   justify-content: center;
@@ -33,4 +39,5 @@
   margin-right: 3px;
   border-radius: 5px;
   padding: 5px;
+  font-weight: bold;
 }

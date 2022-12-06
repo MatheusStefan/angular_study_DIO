@@ -2,8 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { CardComponent } from "src/app/components/card/card.component";
+
+
 export const environment = {
-  production: false
+  production: false,
+  pokeApi: `https://pokeapi.co/api/v2/pokemon/`
 };
 
 /*
