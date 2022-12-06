@@ -9,8 +9,6 @@ import { PokemonService } from 'src/app/services/pokemon.service';
 })
 export class CardComponent implements OnInit {
   pokemon: PokemonData
-  name: string = "Squirtle"
-  types: string[] = ['Water']
 
   constructor(
     private service: PokemonService
