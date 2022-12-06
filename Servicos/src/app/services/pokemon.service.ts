@@ -10,6 +10,7 @@ import { PokemonData } from '../models/pokemonData';
 export class PokemonService {
   private baseURL:string = ""
   private pokeData: PokemonData | any
+  
   constructor(private http:HttpClient) {
     this.baseURL = environment.pokeApi
   }
