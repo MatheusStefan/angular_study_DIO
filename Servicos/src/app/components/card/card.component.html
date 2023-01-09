@@ -1,6 +1,6 @@
 
 <div class="card">
-  <input type="text" (input)="getPokemon($any($event.target).value)">
+  <input type="text" placeholder="Type an Id or Name of a pokemon" (input)="getPokemon($any($event.target).value)">
   <div class="card__title">
     <h3>{{ pokemon.name }}</h3>
   </div>
