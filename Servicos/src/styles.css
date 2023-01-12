@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+.content {
+  width: 100vw;
+  height: 100vh;
+  padding: 1rem;
+  background-color: #FFF;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 982px) {
+  .content {
+    max-width: 982px;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 1rem;
+  }
+}
+
+
