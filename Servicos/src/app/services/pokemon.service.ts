@@ -10,13 +10,19 @@ import { PokemonData } from '../models/pokemonData';
 export class PokemonService {
   private baseURL:string = ""
   private pokeData: PokemonData | any
-  
+
   constructor(private http:HttpClient) {
     this.baseURL = environment.pokeApi
   }
 
   getPokemon(pokemonName:string):Observable<PokemonData> {
     this.pokeData = this.http.get<PokemonData>(`${this.baseURL}${pokemonName}`)
+    return this.pokeData
+  }
+
+  getPokemonType(pokemonType: string): Observable<PokemonData> {
+    this.pokeData = this.http.get<PokemonData>(`${this.baseURL}${pokemonType}`)
+    console.log(this.pokeData)
     return this.pokeData
   }
 }

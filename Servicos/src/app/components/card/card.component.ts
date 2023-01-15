@@ -1,3 +1,4 @@
+import { CssSelector } from '@angular/compiler';
 import { Component, Input, OnInit } from '@angular/core';
 import { PokemonData } from 'src/app/models/pokemonData';
 import { PokemonService } from 'src/app/services/pokemon.service';
@@ -12,14 +13,14 @@ export class CardComponent implements OnInit {
 
   constructor(
     private service: PokemonService
-    ) {
+  ) {
     this.pokemon = {
       id: 0,
       name: '',
       sprites: {
         front_default: ''
       },
-      types:[]
+      types: []
     }
   }
 
@@ -27,7 +28,6 @@ export class CardComponent implements OnInit {
     this.getPokemon('bulbasaur')
 
   }
-
 
   getPokemon(searchName: string) {
     this.service.getPokemon(searchName).subscribe(
